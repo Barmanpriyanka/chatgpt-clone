@@ -5,6 +5,9 @@ import msgIcon from './assets/message.svg';
 import home from './assets/home.svg';
 import saved from './assets/bookmark.svg';
 import rocket from './assets/rocket.svg';
+import sendBtn from './assets/send.svg'
+import userIcon from './assets/user-icon.png'
+import gptImgLogo from './assets/chatgptLogo.svg';
 
 function App() {
   return (
@@ -12,8 +15,10 @@ function App() {
       <div className="sideBar">
         <div className="upperSide">
           <div className="upperSideTop">
-            <img src={gptLogo} alt="Logo" className="logo" />
-            <span className="brand">ChatGPT</span>
+            <div className="logo-brand">
+              <img src={gptLogo} alt="Logo" className="logo" />
+              <span className="brand">ChatGPT</span>
+            </div>
             <button className="midBtn">
               <img src={addBtn} alt="New chat" className="addBtn" /> New Chat
             </button>
@@ -39,7 +44,20 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="main"></div>
+      <div className="main">
+        <div className="chats">
+          <img src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div className="chats">
+          <img src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.</p>
+        </div>
+        <div className="chatFooter">
+          <div className="inp">
+            <input type="text" placeholder='Send a message'></input> <button className="send"><img src={sendBtn} alt="Send" ></img></button>
+          </div>
+          <p>ChatGPT may produce inaccurate information about people, places,orfacts.ChatGPT August 20 Version.</p>
+        </div>
+      </div>
     </div>
   );
 }
