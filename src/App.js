@@ -45,12 +45,20 @@ function App() {
         </div>
       </div>
       <div className="main">
-        <div className="chats">
-          <img src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div className="chats">
-          <img src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit.</p>
-        </div>
+       
+          <div className="chats">
+             <div className="chat">
+             <img className='chatImg' src={userIcon} alt=""/> <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed nec eleifend metus. Nullam id bibendum purus. Aenean convallis, arcu id dictum tempus, odio justo dapibus ligula, nec convallis purus urna at eros. Donec suscipit est at tincidunt consequat. Nulla facilisi. Sed hendrerit est vel felis cursus, et consectetur orci rhoncus.</p>
+             </div>
+
+             <div className="chat bot">
+              <img className='chatImg' src={gptImgLogo} alt=""/> <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra arcu a magna tempus, non vulputate magna lacinia. Integer euismod tortor nec odio pretium, vel sodales erat tempor. Vivamus gravida, libero non tincidunt posuere, lacus nisi vestibulum metus, in faucibus orci justo et odio. Nullam sit amet interdum ex. Mauris sit amet libero convallis, lacinia nunc ut, dapibus velit. Curabitur vel lorem a ipsum venenatis faucibus. Donec condimentum turpis ut nisi fringilla, et tincidunt libero facilisis. Nam nec risus at est tempor ultricies in a erat. Praesent sed malesuada ex. Ut vehicula ipsum ut nisi malesuada, in suscipit justo interdum. Phasellus ac orci ac tortor tincidunt faucibus. Vestibulum ut libero suscipit, laoreet odio et, laoreet purus. Cras et nunc vitae magna elementum dignissim. Aliquam erat volutpat. Sed quis tincidunt mauris, eu dignissim dui.</p>
+             </div>
+
+          </div>
+          
+        
+        
         <div className="chatFooter">
           <div className="inp">
             <input type="text" placeholder='Send a message'></input> <button className="send"><img src={sendBtn} alt="Send" ></img></button>
